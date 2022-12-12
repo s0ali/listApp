@@ -1,0 +1,26 @@
+<!--
+<nav>
+    <a routerLink="/registration">register</a>
+</nav>
+-->
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="username">
+            Userame
+        </label>
+        <input id="username" type="text" formControlName="username">
+    </div>
+
+    <div>
+        <label for="password">
+            Password
+        </label>
+        <input id="password" type="password" formControlName="password">
+    </div>
+
+    <button class="button" type="submit">Login</button>
+    <button class="button" type="button" routerLink="/registration">register</button>
+  
+  </form>
